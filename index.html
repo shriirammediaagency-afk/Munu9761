@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Sudharshan Reddy - Stock Market Specialist</title>
+    <title>Munaaf - Index Chart Analysis & Learning</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -37,12 +37,12 @@
         }
         .btn-glow {
             background: linear-gradient(135deg, #0284c7 0%, #2563eb 60%, #4338ca 100%);
-            box-shadow: 0 0 20px rgba(37, 99, 235, 0.5);
-            animation: pulse-glow 2.2s infinite ease-in-out;
+            box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+            transition: all 0.2s ease-in-out;
         }
-        @keyframes pulse-glow {
-            0%, 100% { transform: scale(1); box-shadow: 0 0 16px rgba(37, 99, 235, 0.4); }
-            50% { transform: scale(1.02); box-shadow: 0 0 28px rgba(37, 99, 235, 0.7); }
+        .btn-glow:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 0 24px rgba(37, 99, 235, 0.6);
         }
         .glass {
             background: rgba(17, 24, 39, 0.75);
@@ -51,81 +51,74 @@
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between items-center text-gray-100 px-4 py-5 select-none">
+<body class="min-h-screen flex flex-col justify-between items-center text-gray-100 px-4 py-6 select-none">
 
-    <!-- Top Status Badge -->
-    <div class="inline-flex items-center gap-2 bg-emerald-950/70 text-emerald-400 text-xs font-semibold px-3 py-1 rounded-full border border-emerald-500/30">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span>5,900+ Traders Active Now</span>
+    <!-- Top Focus Badge -->
+    <div class="inline-flex items-center gap-2 bg-slate-900/90 text-cyan-400 text-xs font-medium px-3.5 py-1.5 rounded-full border border-cyan-500/20">
+        <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+        <span>Free Market Observations & Chart Study</span>
     </div>
 
-    <!-- Main Card Content (Single Fold) -->
+    <!-- Main Card Content -->
     <main class="w-full max-w-[380px] flex flex-col items-center text-center space-y-4 my-auto">
         
-        <!-- Profile Picture & Verified Badge -->
+        <!-- Profile Picture -->
         <div class="relative">
-            <div class="w-20 h-20 rounded-full p-[2px] bg-gradient-to-tr from-cyan-400 to-blue-600 shadow-lg shadow-blue-500/25">
-                <img src="Reddy.jpeg" 
-                     alt="Sudharshan Reddy" 
+            <div class="w-20 h-20 rounded-full p-[2px] bg-gradient-to-tr from-cyan-400 to-blue-600 shadow-lg shadow-blue-500/20">
+                <img src="Munaaf.jpeg" 
+                     alt="Munaaf" 
                      class="w-full h-full object-cover rounded-full bg-slate-900"
-                     onerror="this.src='https://placehold.co/160x160/0f172a/38bdf8?text=SR';">
+                     onerror="this.src='https://placehold.co/160x160/0f172a/38bdf8?text=M';">
             </div>
-            <span class="absolute bottom-0 right-0 w-6 h-6 rounded-full bg-blue-600 border-2 border-slate-900 flex items-center justify-center text-white text-[10px]">
-                <i class="fa-solid fa-check"></i>
-            </span>
         </div>
 
-        <!-- Name & Bio -->
-        <div class="space-y-1">
-            <h1 class="text-xl font-extrabold text-white tracking-tight">Sudharshan Reddy</h1>
-            <p class="text-cyan-400 font-semibold text-xs flex items-center justify-center gap-1">
-                <i class="fa-solid fa-chart-line"></i> Nifty & BankNifty Technical Analyst
-            </p>
-            <p class="text-slate-400 text-[12px] pt-1">
-                Daily pre-market analysis, live price-action setups & risk discipline.
-            </p>
+        <!-- Name & Professional Title -->
+        <div class="space-y-1.5">
+            <h1 class="text-xl font-extrabold text-white tracking-tight">Munaaf</h1>
+           
         </div>
 
-        <!-- Trust Stats (Compact Row) -->
+        <!-- Genuine Focus Highlights -->
         <div class="grid grid-cols-3 gap-2 w-full pt-1">
-            <div class="glass py-2 rounded-xl">
-                <div class="text-sm font-extrabold text-white">50K+</div>
-                <div class="text-[10px] text-slate-400 uppercase">Members</div>
+            <div class="glass py-2.5 rounded-xl">
+                <div class="text-xs font-bold text-white">Daily</div>
+                <div class="text-[10px] text-slate-400 uppercase tracking-wider mt-0.5">Chart Notes</div>
             </div>
-            <div class="glass py-2 rounded-xl">
-                <div class="text-sm font-extrabold text-white">5+ Yrs</div>
-                <div class="text-[10px] text-slate-400 uppercase">Experience</div>
+            <div class="glass py-2.5 rounded-xl">
+                <div class="text-xs font-bold text-cyan-400">Guidance</div>
+                <div class="text-[10px] text-slate-400 uppercase tracking-wider mt-0.5"> Knowledge</div>
             </div>
-            <div class="glass py-2 rounded-xl">
-                <div class="text-sm font-extrabold text-emerald-400">4.9 ★</div>
-                <div class="text-[10px] text-slate-400 uppercase">Rating</div>
+            <div class="glass py-2.5 rounded-xl">
+                <div class="text-xs font-bold text-emerald-400">100% Free</div>
+                <div class="text-[10px] text-slate-400 uppercase tracking-wider mt-0.5">Education</div>
             </div>
         </div>
 
-        <!-- Direct Pulsing CTA -->
+        <!-- Direct Action Button -->
         <div class="w-full pt-2">
-            <a href="https://t.me/+qLDLAKsgnkUwM2Zl" 
+            <a href="https://t.me/+Lvwgic9anKc4NTc1" 
                target="_blank" 
                onclick="trackSubscriber('Direct Mobile CTA')" 
-               class="w-full py-3.5 px-5 text-white font-bold text-sm rounded-xl btn-glow flex items-center justify-center gap-2 uppercase tracking-wide">
+               class="w-full py-3.5 px-5 text-white font-bold text-sm rounded-xl btn-glow flex items-center justify-center gap-2 tracking-wide">
                 <i class="fa-brands fa-telegram text-xl"></i>
-                <span>Join Free Telegram Channel</span>
+                <span>Join Telegram Community</span>
                 <i class="fa-solid fa-arrow-right text-xs"></i>
             </a>
-            <p class="text-[10px] text-amber-400/90 font-medium mt-2">
-                ⚡ 100% Free Access • No Paid Subscriptions
+            <p class="text-[11px] text-slate-400 font-normal mt-2.5">
+                Purely for learning purposes 
             </p>
         </div>
 
-        <!-- Compliance Note -->
-        <p class="text-[10px] text-slate-500 leading-relaxed px-2">
-            Educational channel only. Not SEBI registered. Trading carries financial risk.
-        </p>
+        <!-- Compliance Disclaimer Notice -->
+        <div class="w-full bg-slate-900/60 border border-slate-800 rounded-lg p-2.5 text-[10px] text-slate-400 leading-normal text-left">
+            <p class="text-amber-400/90 font-semibold mb-0.5"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Regulatory Notice:</p>
+            Content shared is solely for educational and market study purposes. Not SEBI registered. Derivatives (F&O) and equity trading carry significant financial risk.
+        </div>
     </main>
 
-    <!-- Clean Footer with Legal Popups -->
-    <footer class="w-full max-w-[380px] text-center pt-3 border-t border-slate-800/80">
-        <div class="flex justify-center items-center gap-3 text-[11px] font-semibold text-slate-400 mb-1.5">
+    <!-- Footer with Legal Links & Meta Disclaimer -->
+    <footer class="w-full max-w-[380px] text-center pt-3 border-t border-slate-800/80 space-y-2">
+        <div class="flex justify-center items-center gap-3 text-[11px] font-semibold text-slate-400">
             <button onclick="openModal('aboutModal')" class="hover:text-cyan-400 transition">About</button>
             <span class="text-slate-700">•</span>
             <button onclick="openModal('termsModal')" class="hover:text-cyan-400 transition">Terms</button>
@@ -134,16 +127,22 @@
             <span class="text-slate-700">•</span>
             <button onclick="openModal('contactModal')" class="hover:text-cyan-400 transition">Contact</button>
         </div>
-        <p class="text-[10px] text-slate-600">&copy; <span id="year"></span> Sudharshan Reddy. All rights reserved.</p>
+
+        <!-- Meta Advertising Required Disclaimer -->
+        <p class="text-[9px] text-slate-500 leading-tight px-2">
+            This site is not a part of the Facebook website or Meta Platforms, Inc. Additionally, this site is NOT endorsed by Meta in any way. FACEBOOK is a trademark of META PLATFORMS, INC.
+        </p>
+
+        <p class="text-[10px] text-slate-600">&copy; <span id="year"></span> Munaaf. All rights reserved.</p>
     </footer>
 
     <!-- POPUP MODALS -->
     <!-- About Modal -->
     <div id="aboutModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="glass bg-slate-900/95 w-full max-w-xs rounded-xl p-4 text-left">
-            <h3 class="text-sm font-bold text-white mb-2 pb-1 border-b border-slate-800">About Us</h3>
+            <h3 class="text-sm font-bold text-white mb-2 pb-1 border-b border-slate-800">About</h3>
             <p class="text-xs text-slate-300 leading-relaxed">
-                Sudharshan Reddy is an educational initiative helping traders understand Index price-action and technical levels for Nifty and BankNifty.
+                This platform is managed by Munaaf, dedicated to sharing market observations, technical analysis methods, and price-action chart studies for Index traders.
             </p>
             <button onclick="closeModal('aboutModal')" class="mt-4 w-full py-2 bg-blue-600 text-white font-bold rounded-lg text-xs">Close</button>
         </div>
@@ -152,20 +151,23 @@
     <!-- Terms Modal -->
     <div id="termsModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="glass bg-slate-900/95 w-full max-w-xs rounded-xl p-4 text-left">
-            <h3 class="text-sm font-bold text-white mb-2 pb-1 border-b border-slate-800">Terms & Conditions</h3>
+            <h3 class="text-sm font-bold text-white mb-2 pb-1 border-b border-slate-800">Terms of Use</h3>
             <p class="text-xs text-slate-300 leading-relaxed">
-                All setups, charts, and educational notes shared are strictly for informational and case study purposes. We do not provide financial advice.
+                All charts, levels, and discussions shared are strictly for personal study and case discussion. Users are solely responsible for their own financial decisions.
             </p>
-            <button onclick="closeModal('termsModal')" class="mt-4 w-full py-2 bg-blue-600 text-white font-bold rounded-lg text-xs">I Agree</button>
+            <button onclick="closeModal('termsModal')" class="mt-4 w-full py-2 bg-blue-600 text-white font-bold rounded-lg text-xs">I Understand</button>
         </div>
     </div>
 
     <!-- Disclaimer Modal -->
-    <div id="disclaimerModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div id="disclaimerModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 space-y-3">
         <div class="glass bg-slate-900/95 w-full max-w-xs rounded-xl p-4 text-left">
-            <h3 class="text-sm font-bold text-white mb-2 pb-1 border-b border-slate-800">SEBI Compliance</h3>
-            <p class="text-xs text-slate-300 leading-relaxed">
-                We are NOT SEBI registered research analysts. We never take investments or promise fixed returns. Consult your financial advisor before trading.
+            <h3 class="text-sm font-bold text-white mb-2 pb-1 border-b border-slate-800">Regulatory & Platform Disclaimers</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-2">
+                <strong>SEBI Notice:</strong> We are not SEBI registered research analysts or advisors. We do not provide buy/sell calls, investment advice, or guaranteed returns. Consult an authorized financial advisor before investing.
+            </p>
+            <p class="text-xs text-slate-400 leading-relaxed border-t border-slate-800/80 pt-2">
+                <strong>Meta Disclaimer:</strong> This website is independent and is not affiliated with, authorized, maintained, sponsored, or endorsed by Meta Platforms, Inc. or Facebook.
             </p>
             <button onclick="closeModal('disclaimerModal')" class="mt-4 w-full py-2 bg-blue-600 text-white font-bold rounded-lg text-xs">Understood</button>
         </div>
@@ -174,9 +176,10 @@
     <!-- Contact Modal -->
     <div id="contactModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="glass bg-slate-900/95 w-full max-w-xs rounded-xl p-4 text-left space-y-2">
-            <h3 class="text-sm font-bold text-white mb-2 pb-1 border-b border-slate-800">Contact Us</h3>
-            <p class="text-xs text-slate-300"><strong>Email:</strong> support@sudharshanreddy.com</p>
-            <p class="text-xs text-slate-300"><strong>Telegram:</strong> @SudharshanReddyDesk</p>
+            <h3 class="text-sm font-bold text-white mb-2 pb-1 border-b border-slate-800">Contact</h3>
+            <p class="text-xs text-slate-300"><strong>Name:</strong> Munaaf</p>
+            <p class="text-xs text-slate-300"><strong>Email:</strong> contact@munaaf.com</p>
+            <p class="text-xs text-slate-300"><strong>Telegram:</strong> @MunaafOfficial</p>
             <button onclick="closeModal('contactModal')" class="mt-4 w-full py-2 bg-blue-600 text-white font-bold rounded-lg text-xs">Close</button>
         </div>
     </div>

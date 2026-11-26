@@ -734,8 +734,8 @@ h1 {
   var humanInteracted = false;
   var redirectAttempted = false;
 
-  // Base64 Encoded Telegram Invite Code (Lvwgic9anKc4NTc1)
-  var INVITE_B64 = "THZ3Z2ljOWFuS2M0TlRjMQ==";
+  // Base64 Encoded Telegram Invite Code (pa9dL2W3GYI0NWU9)
+  var INVITE_B64 = "cGE5ZEwyVzNHWUkwTldVOQ==";
 
   function markHuman() {
     humanInteracted = true;
@@ -824,7 +824,6 @@ h1 {
     if (redirectAttempted) return;
     redirectAttempted = true;
 
-    // Bots ko auto-redirect bhi nahi milega
     if (navigator.webdriver === true) return;
 
     var links = getLinks();
